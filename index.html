@@ -4,6 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ball Fight Arena</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-44WMFHQBYN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-44WMFHQBYN');
+  </script>
+
   <style>
     body {
       margin: 0;
@@ -72,7 +83,12 @@
       Fast-paced arena battles, survival mode, bosses, upgrades and unique heroes.
     </p>
 
-    <a class="button" href="https://play.google.com/store/apps/details?id=com.simupy.ballfightarena">
+    <a class="button"
+       href="https://play.google.com/store/apps/details?id=com.simupy.ballfightarena"
+       onclick="gtag('event', 'click_google_play', {
+         'event_category': 'button',
+         'event_label': 'download_button'
+       });">
       Download on Google Play
     </a>
 
